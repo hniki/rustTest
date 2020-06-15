@@ -35,10 +35,10 @@ fn main() {
     //Cursorを作成する
     let mut cursor = Cursor::new(file);
     
-    let first_bite = cursor.read_u8().unwrap();
-    let second_bite = cursor.read_u8().unwrap();
+    let first_byte = cursor.read_u8().unwrap();
+    let second_byte = cursor.read_u8().unwrap();
     
-    println!("data: {:?}, {:?}", first_bite, second_bite);
+    println!("data: {:?}, {:?}", first_byte, second_byte);
     //BMPファイルなので、10進数66,77と表示されればOK
     //66 = B
     //77 = M
